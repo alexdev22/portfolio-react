@@ -1,13 +1,99 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root {
+  --h2-font-size: 3rem;
+  --intro-title-font-size: 3.5rem;
+  --underline-color: steelblue;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+p {
+  font-size: 1.6rem;
+}
+
+header {
+  height: 10vh;
+  font-size: 2rem;
+}
+
+header a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.nav__list {
+  list-style: none;
+  margin: 1rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav__individual-list {
+  margin: 1rem;
+}
+
+h1 {
+  font-size: var(--intro-title-font-size);
+}
+
+.underline {
+  height: 0.5rem;
+  background: var(--underline-color);
+  width: 150px;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+}
+
+.intro-section {
+  width: 50rem;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+}
+
+.intro-section__image {
+  width: 400px;
+  height: 400px;
+  background: rgb(204, 204, 204);
+  clip-path: circle();
+  position: absolute;
+  top: 33rem;
+  left: -30rem;
+  z-index: -1;
+}
+
+.contact-section,
+.portfolio-section {
+  height: 100vh;
+}
+
+.portfolio-section__header,
+.contact-section__header {
+  font-size: var(--h2-font-size);
+  text-align: center;
+}
+
+.portfolio-section__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 33vw);
+  gap: 1rem;
+  justify-items: center;
+}
+.portfolio-section__individual-item {
+  height: 300px;
+  width: 27vw;
+  background: grey;
 }
