@@ -7,7 +7,7 @@ const Menu = () => {
             <a href="#portfolio">Portfolio</a>
           </li>
           <li className="nav__individual-list">
-            <a href="#sobre-mi">¿Quién Soy?</a>
+            <a href="#tecnologias">Tecnologías</a>
           </li>
           <li className="nav__individual-list">
             <a href="#contacto">Contacto</a>

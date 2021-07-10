@@ -20,6 +20,9 @@ p {
   font-size: 1.6rem;
 }
 
+main {
+  position: relative;
+}
 header {
   height: 10vh;
   font-size: 2rem;
@@ -58,10 +61,13 @@ h1 {
   width: 50rem;
   display: block;
   margin: 0 auto;
-  position: relative;
-  height: 90vh;
+  min-height: 90vh;
   display: flex;
   align-items: center;
+}
+
+.intro-section__container {
+  position: relative;
 }
 
 .intro-section__image {
@@ -70,30 +76,56 @@ h1 {
   background: rgb(204, 204, 204);
   clip-path: circle();
   position: absolute;
-  top: 33rem;
-  left: -30rem;
+  top: -10rem;
+  left: -25rem;
   z-index: -1;
 }
 
 .contact-section,
-.portfolio-section {
+.portfolio-section,
+.tecnologies-section {
   height: 100vh;
 }
 
 .portfolio-section__header,
-.contact-section__header {
+.contact-section__header,
+.tecnologies-section__header {
   font-size: var(--h2-font-size);
   text-align: center;
 }
 
 .portfolio-section__grid {
   display: grid;
-  grid-template-columns: repeat(3, 33vw);
+  grid-template-columns: repeat(3, 32.2vw);
   gap: 1rem;
   justify-items: center;
+  align-items: stretch;
 }
 .portfolio-section__individual-item {
   height: 300px;
-  width: 27vw;
+  width: 100%;
   background: grey;
+}
+
+.porfolio-section__individual-item-1 {
+  grid-column: 1/4;
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  font-size: 2rem;
+  padding: 1rem;
+  background: rgb(211, 211, 211);
+  color: rgb(255, 255, 255);
+  border-radius: 5px;
+  font-size: 3rem;
+  cursor: pointer;
+}
+
+@media (max-width: 500px) {
+  .intro-section {
+    width: 95vw;
+  }
 }

@@ -6,9 +6,7 @@ const Portfolio = () => {
       </h2>
       <div className="underline"></div>
       <div className="portfolio-section__grid">
-        <div className="portfolio-section__individual-item"></div>
-        <div className="portfolio-section__individual-item"></div>
-        <div className="portfolio-section__individual-item"></div>
+        <div className="portfolio-section__individual-item porfolio-section__individual-item-1"></div>
         <div className="portfolio-section__individual-item"></div>
         <div className="portfolio-section__individual-item"></div>
         <div className="portfolio-section__individual-item"></div>
